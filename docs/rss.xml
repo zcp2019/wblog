@@ -1,2 +1,42 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://zcp2019.github.io/wblog</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://zcp2019.github.io/wblog</link></image><lastBuildDate>Mon, 08 Apr 2024 16:22:11 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>是从v  </title><link>https://zcp2019.github.io/wblog/post/shi-cong-v%20%20.html</link><description>的士速递多少。</description><guid isPermaLink="true">https://zcp2019.github.io/wblog/post/shi-cong-v%20%20.html</guid><pubDate>Mon, 08 Apr 2024 09:25:38 +0000</pubDate></item><item><title>第二</title><link>https://zcp2019.github.io/wblog/post/di-er.html</link><description>都是对的所多多。</description><guid isPermaLink="true">https://zcp2019.github.io/wblog/post/di-er.html</guid><pubDate>Mon, 08 Apr 2024 09:21:06 +0000</pubDate></item><item><title>这是我的第一篇博客</title><link>https://zcp2019.github.io/wblog/post/zhe-shi-wo-de-di-yi-pian-bo-ke.html</link><description>*111111111。</description><guid isPermaLink="true">https://zcp2019.github.io/wblog/post/zhe-shi-wo-de-di-yi-pian-bo-ke.html</guid><pubDate>Mon, 08 Apr 2024 09:17:03 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://zcp2019.github.io/wblog</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://zcp2019.github.io/wblog</link></image><lastBuildDate>Tue, 09 Apr 2024 01:47:28 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>chudian</title><link>https://zcp2019.github.io/wblog/post/chudian.html</link><description>n = [];&#13;
+   n['gdws'] = 1182; //广东卫视&#13;
+   n['dwqws'] = 1197; //大湾区卫视&#13;
+   n['dwqws2'] = 1191; //大湾区卫视（海外版）&#13;
+   n['gdzj'] = 1183; //广东珠江&#13;
+   n['gdms'] = 1185; //广东民生&#13;
+   n['gdxw'] = 1186; //广东新闻&#13;
+   n['gdzy'] = 1198; //广东综艺&#13;
+   n['gdty'] = 1184; //广东体育&#13;
+   n['gdys'] = 1199; //广东影视&#13;
+   n['gdjjkj'] = 1196; //广东经济科教&#13;
+   n['gdse'] = 1200; //广东少儿&#13;
+   n['gdyd'] = 2463; //广东移动&#13;
+   n['jjkt'] = 1187; //嘉佳卡通&#13;
+   n['gdwh'] = 2511; //GRTN文化&#13;
+var url = 'https://api.itouchtv.cn:8090/liveservice/v2/tvChannelcontent?sid='+n[vid]+'&amp;channelId=114&amp;fromSource=share&amp;shareTo=WEIXIN&amp;fromSourceParm=0&amp;userPk=0';&#13;
+var timestamp = (new Date).getTime();&#13;
+var str = "GET\n"+url+"\n"+timestamp+"\n";&#13;
+var key = 'HGXimfS2hcAeWbsCW19JQ7PDasYOgg1lY2UWUDVX8nNmwr6aSaFznnPzKrZ84VY1';&#13;
+var hash = CryptoJS.HmacSHA256(str, key);&#13;
+var sign = CryptoJS.enc.Base64.stringify(hash);&#13;
+&#13;
+$.ajax({&#13;
+  type : 'get',&#13;
+  url : url,&#13;
+  dataType : 'json',&#13;
+  crossDomain: true == !(document.all),&#13;
+  contentType: 'application/json',&#13;
+  headers :{&#13;
+            'X-ITOUCHTV-Ca-Key': '28778826534697375418351580924221',&#13;
+            'X-ITOUCHTV-Ca-Signature': sign,&#13;
+            'X-ITOUCHTV-Ca-Timestamp': timestamp,&#13;
+            'X-ITOUCHTV-CLIENT': 'ews_APP',&#13;
+            'x-itouchtv-device-id': 'IMEI_867464032598278',&#13;
+            'x-itouchtv-ts': timestamp&#13;
+           },&#13;
+   success: function(data) {&#13;
+      m3u8 = data.tvChannel.videoUrl;&#13;
+      location.href = 'vlc.htm?id=' + m3u8;&#13;
+   }&#13;
+})。</description><guid isPermaLink="true">https://zcp2019.github.io/wblog/post/chudian.html</guid><pubDate>Tue, 09 Apr 2024 01:47:03 +0000</pubDate></item><item><title>是从v  </title><link>https://zcp2019.github.io/wblog/post/shi-cong-v%20%20.html</link><description>的士速递多少。</description><guid isPermaLink="true">https://zcp2019.github.io/wblog/post/shi-cong-v%20%20.html</guid><pubDate>Mon, 08 Apr 2024 09:25:38 +0000</pubDate></item><item><title>第二</title><link>https://zcp2019.github.io/wblog/post/di-er.html</link><description>都是对的所多多。</description><guid isPermaLink="true">https://zcp2019.github.io/wblog/post/di-er.html</guid><pubDate>Mon, 08 Apr 2024 09:21:06 +0000</pubDate></item><item><title>这是我的第一篇博客</title><link>https://zcp2019.github.io/wblog/post/zhe-shi-wo-de-di-yi-pian-bo-ke.html</link><description>*111111111。</description><guid isPermaLink="true">https://zcp2019.github.io/wblog/post/zhe-shi-wo-de-di-yi-pian-bo-ke.html</guid><pubDate>Mon, 08 Apr 2024 09:17:03 +0000</pubDate></item></channel></rss>
