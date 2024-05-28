@@ -26,7 +26,7 @@
    n['gdwh'] = 2511; //GRTN文化
 var url = 'https://api.itouchtv.cn:8090/liveservice/v2/tvChannelcontent?sid='+n[vid]+'&channelId=114&fromSource=share&shareTo=WEIXIN&fromSourceParm=0&userPk=0';
 var timestamp = (new Date).getTime();
-var str = "GET\n"+url+"\n"+timestamp+"\n";
+var str = 'GET\n'+url+'\n'+timestamp+'\n';
 var key = 'HGXimfS2hcAeWbsCW19JQ7PDasYOgg1lY2UWUDVX8nNmwr6aSaFznnPzKrZ84VY1';
 var hash = CryptoJS.HmacSHA256(str, key);
 var sign = CryptoJS.enc.Base64.stringify(hash);
@@ -68,7 +68,7 @@ $.ajax({
    n['gdwh'] = 2511; //GRTN文化
 var url = 'https://api.itouchtv.cn:8090/liveservice/v2/tvChannelcontent?sid='+n[vid]+'&channelId=114&fromSource=share&shareTo=WEIXIN&fromSourceParm=0&userPk=0';
 var timestamp = (new Date).getTime();
-var str = "GET\n"+url+"\n"+timestamp+"\n";
+var str = 'GET\n'+url+'\n'+timestamp+'\n';
 var key = 'HGXimfS2hcAeWbsCW19JQ7PDasYOgg1lY2UWUDVX8nNmwr6aSaFznnPzKrZ84VY1';
 var hash = CryptoJS.HmacSHA256(str, key);
 var sign = CryptoJS.enc.Base64.stringify(hash);
@@ -284,7 +284,6 @@ function iFrameLoading(){
     }
 }
 </script>
-
 
 
 </html>
